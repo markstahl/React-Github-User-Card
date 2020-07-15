@@ -8,15 +8,16 @@ const Card = styled.div`
   padding: 10px;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 5px 5px 15px gray;
+  box-shadow: 7px 7px 15px gray;
   color: white;
+  font-family: verdana;
 `;
 
 const Image = styled.img`
   border: 4px solid white;
   border-radius: 8px;
   margin-top: 10px;
-  box-shadow: 5px 5px 15px gray;
+  box-shadow: 5px 5px 15px lightgray;
 `;
 
 const Span = styled.span`
@@ -30,7 +31,7 @@ const GithubLink = styled.a`
 `;
 
 const ColorImage = styled.div`
-  background-color: black;
+  background-color: purple;
 `;
 
 const UserCard = props => {
@@ -47,11 +48,21 @@ const UserCard = props => {
       <h3>Bio: 
         <Span>{props.user.bio}</Span>
       </h3>
+      <h3>Company:
+      <Span>{props.user.company}</Span>
+      </h3>
+      <h3>Website:
+      <Span>{props.user.blog}</Span>
+      </h3>
+      <h3>Twitter Username:
+      <Span>{props.user.twitter_username}</Span>
+      </h3>
       <ColorImage>
         <img src="https://ghchart.rshah.org/markstahl" width="500" height="150" alt="contributions" />
       </ColorImage>
     </Card>
   )
+  
 };
 
 export default UserCard;

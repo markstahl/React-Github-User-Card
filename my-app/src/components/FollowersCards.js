@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Card = styled.div`
-background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190820/pngtree-80s-geometric-background-image_303151.jpg);
+background-image: url(https://images.fineartamerica.com/images-medium-large-5/retro-80s-background-jamielawton.jpg);
   width: 500px;
   margin: 30px auto;
   text-align: center;
@@ -13,18 +13,17 @@ background-image: url(https://png.pngtree.com/thumb_back/fw800/background/201908
 `;
 
 const FollowersCard = props => {
-  console.log("Followers props: ", props)
     if(props.follower.length > 0) {
       return (
         <Card>
           <h3>Number of Followers: {props.follower.length}</h3>
-          {props.follower.map(following => {
+          {/* {props.follower.map(following => {
             return (
             <div>
               <img src={following.follower.photo} alt="user avatar" />
               <h3>Name: {following.follower.name}</h3>
-            </div>
-          )})}
+            </div> */}
+          {/* )})} */}
         </Card>
       )
     } else {

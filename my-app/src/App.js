@@ -32,7 +32,7 @@ class App extends React.Component {
 
   getFollowersInfo = () => {
     axios
-      .get('https://api.github.com/users/markstahl/follower')
+      .get('https://api.github.com/users/markstahl/followers')
       .then(res => {
         console.log(res.data);
         this.setState({
